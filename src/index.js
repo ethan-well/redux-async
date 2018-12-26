@@ -1,10 +1,14 @@
+import 'babel-polyfill'
+
 import React from 'react'
 import { render } from 'react-dom'
+import Root from './containers/Root'
 
 render(
-  <div>Redux Async</div>,
+  <Root />,
   document.getElementById('root')
 )
+
 
 if (module.hot) {
   module.hot.accept('./print.js', function(){
